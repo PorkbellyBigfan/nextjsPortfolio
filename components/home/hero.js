@@ -10,7 +10,9 @@ export default function Hero(){
           <p className="mb-8 leading-relaxed">안녕하세요. 저는 김형준이라고 합니다. 웹 개발자로 구직중인 상태구요.<br/>이것저것 해보고 있습니다.</p>
           <div className="flex justify-center">
             <Link href='/projects' legacyBehavior>
-              <a className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">My Projects</a>
+              <a className="btn-project">
+                My Projects
+              </a>
             </Link>
           </div>
       </div>
