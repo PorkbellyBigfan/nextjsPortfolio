@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Porkbelly's Portfolio</title>
+        <title>Porkbelly&apos;s Portfolio</title>
         <meta name='description' content='Porkbelly is good'/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>

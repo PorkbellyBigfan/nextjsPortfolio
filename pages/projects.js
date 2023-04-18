@@ -10,11 +10,11 @@ export default function Projects({projects}){
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-5 py-24 mb-30">
         <Head>
-          <title>Porkbelly's Projects</title>
+          <title>Porkbelly&apos;s Projects</title>
           <meta name='description' content='Porkbelly is good'/>
           <link rel="icon" href="/favicon.ico"/>
         </Head>
-        <h1 className="text-4xl font-bold sm:text-6xl">Porkbelly's Project</h1>
+        <h1 className="text-4xl font-bold sm:text-6xl">Porkbelly&apos;s Project</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 m-6 gap-8 sm:w-full">
           {projects.results.map((aProject)=>(
             <ProjectItem key={aProject.id} data={aProject}/>

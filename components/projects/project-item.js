@@ -50,7 +50,7 @@ export default function ProjectItem({data}) {
         </a>
         <div className="flex items-start mt-2 flex-wrap gap-y-1">
           {tags.map((aTag)=>(
-            <h1 className={`px-2 py-1 mr-2 rounded-md bg.${aTag.color="default"?"원하는기본값":aTag.color} dark:bg-sky-700`} key={aTag.id}>{aTag.name}</h1>
+            <h1 className={`px-2 py-1 mr-2 rounded-md bg-sky-600 dark:bg-sky-700`} key={aTag.id}>{aTag.name}</h1>
           ))}
         </div>
         <p className="my-5">
