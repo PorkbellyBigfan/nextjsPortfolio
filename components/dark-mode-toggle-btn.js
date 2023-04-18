@@ -16,8 +16,6 @@ export default function DarkModeToggleBtn(){
           dark:bg-slate-600
           dark:text-slate-400
           dark:hover:text-orange-400"
-          
-
         type="button"
         onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {/*라이트 모드*/}
@@ -38,8 +36,6 @@ export default function DarkModeToggleBtn(){
               className="invisible dark:visible dark:h-5 dark:w-5 h-0 w-0">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
         </svg>
-
-
       </button>
     </>
   )
