@@ -1,6 +1,7 @@
 import Layout from '@/components/layout'
 import Hero from '@/components/home/hero'
 import Head from 'next/head'
+import { DATABASE_ID } from '@/config'
 
 export default function Home() {
   return (
