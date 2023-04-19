@@ -18,9 +18,6 @@ export default function ProjectItem({data}) {
     var startDate = new Date(startDateStringArray[0], startDateStringArray[1], startDateStringArray[2]);
     var endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
 
-    console.log(`startDate: ${startDate}`)
-    console.log(`endDate: ${endDate}`)
-
     const diffInMs = Math.abs(endDate - startDate);
     const result = diffInMs / (1000 * 60 * 60 * 24);
 
@@ -30,6 +27,8 @@ export default function ProjectItem({data}) {
 
   return(
     <div className="project-card">
+      {/* 이미지 주소 확인용 */}
+      console.log(imgSrc);
       <Image
           className="rounded-t-xl"
           src={imgSrc}
