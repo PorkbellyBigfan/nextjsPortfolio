@@ -10,7 +10,8 @@ export default function ProjectItem({data}) {
 
   const start = data.properties.Date.date.start
   const end = data.properties.Date.date.end
-
+  // imgSrc 확인용
+  console.log(`imgSrc : ${imgSrc}`)
   const calculatedPeriod = (start, end) => {
     const startDateStringArray = start.split('-');
     const endDateStringArray = end.split('-');
@@ -20,15 +21,12 @@ export default function ProjectItem({data}) {
 
     const diffInMs = Math.abs(endDate - startDate);
     const result = diffInMs / (1000 * 60 * 60 * 24);
-
     console.log(`기간 : ${result}`)
     return result;
 };
 
   return(
     <div className="project-card">
-      {/* 이미지 주소 확인용 */}
-      console.log(imgSrc);
       <Image
           className="rounded-t-xl"
           src={imgSrc}
@@ -38,6 +36,7 @@ export default function ProjectItem({data}) {
           layout="responsive"
           objectFit="cover"
           quality={100}
+          priority={true}
       />
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">{title}</h1>
